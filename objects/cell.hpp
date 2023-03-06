@@ -8,6 +8,7 @@ class Cell
 public:
     enum class Type
     {
+        NUN,
         EMPTY,
         WALL,
         FOOD,

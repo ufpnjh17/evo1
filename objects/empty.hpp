@@ -6,8 +6,6 @@
 
 class Empty : public Cell
 {
-private:
-    /* data */
 public:
     Empty();
 };

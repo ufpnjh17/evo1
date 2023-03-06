@@ -11,3 +11,4 @@ Cell::Type
 Cell::getType(){
     return mType;
 }
+

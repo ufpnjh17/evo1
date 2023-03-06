@@ -20,13 +20,27 @@ public:
         UP_LEFT
     };
 
+    enum class Action
+    {
+        NUN,
+        LOOK,
+        EAT,
+        DO,
+        MOVE
+    };
+
     Bot();
+    
+    Action action(Cell::Type aType = Cell::Type::NUN);
+
+    Direction getDirection();
 
 private:
     std::vector<int> mCode; // генетический код
     int mIterator;          //
     int mLife;              // время жизни
     Direction mDirection;
+
 };
 
 #endif // !BOT_HPP

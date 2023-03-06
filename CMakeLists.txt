@@ -13,7 +13,8 @@ project(Journal)
 find_package(SFML COMPONENTS system window graphics CONFIG REQUIRED)
 
 # Sources include
-add_executable(${PROJECT_NAME} evolution.cpp objects/cell.cpp objects/cell.cpp objects/bot.cpp objects/bot.hpp objects/empty.cpp objects/empty.hpp objects/food.cpp objects/food.hpp objects/poison.cpp objects/poison.hpp objects/wall.cpp objects/wall.hpp)
+add_executable(${PROJECT_NAME} evolution.cpp objects/cell.cpp objects/cell.hpp objects/bot.cpp objects/bot.hpp objects/empty.cpp objects/empty.hpp objects/food.cpp objects/food.hpp objects/poison.cpp objects/poison.hpp objects/wall.cpp objects/wall.hpp
+world.cpp world.hpp point.cpp point.hpp)
 # Libraries include
 target_link_libraries(${PROJECT_NAME} PRIVATE sfml-system sfml-network sfml-graphics sfml-window)
 
